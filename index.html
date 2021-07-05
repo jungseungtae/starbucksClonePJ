@@ -45,7 +45,13 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js"
     integrity="sha512-2fk3Q4NXPYAqIha0glLZ2nluueK43aNoxvijPf53+DgL7UW9mkN+uXc1aEmnZdkkZVvtJZltpRt+JqTWc3TS3Q=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  
+  <!-- Swiper -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
   <script defer src="./js/main.js"></script>
+
 </head>
 
 <body>
@@ -414,9 +420,105 @@
         <img src="./images/visual_spoon.png" alt="SPOON" class="spoon" />
       </div>
       
+    </div>
+  </section> <!-- visual END -->
+
+  <!-- NOTICE Start -->
+  <section class="notice">
+
+    <div class="notice-line">
+
+      <div class="bg-left"></div>
+      <div class="bg-right"></div>
+
+      <div class="inner">
+
+        <div class="inner__left">
+          <h2>공지사항</h2>
+            <div class="swiper-container">
+
+              <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                  <a href="javascript:void(0)">크리스마스 & 연말연시 스타벅스 매장 영업시간 변경 안내</a>
+                </div>
+
+                <div class="swiper-slide">
+                  <a href="javascript:void(0)">[당첨자 발표] 2021 스타벅스 플래너 영수증 이벤트</a>
+                </div>
+              
+                <div class="swiper-slide">
+                  <a href="javascript:void(0)">스타벅스커피 코리아 애플리케이션 버전 업데이트 안내</a>
+                </div>
+
+
+                <div class="swiper-slide">
+                  <a href="javascript:void(0)">[당첨자 발표] 뉴이어 전자영수증 이벤트</a>
+                </div>
+                
+              </div> <!-- wrapper END -->
+            </div> <!-- container END -->
+
+              <a href="javascript:void(0)" class="notice-line__more">
+                <div class="material-icons">add_circle</div>
+              </a>
+            </div>
+
+        <div class="inner__right">
+          <h2>스타벅스 프로모션</h2>
+          <div class="toggle-promotion">
+            <div class="material-icons">upload</div>
+          </div>
+        </div>
+
+      </div>  <!-- inner END -->
+    </div> <!-- notice-line END -->
+
+    <div class="promotion">
+
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide">
+            <img src="./images/promotion_slide1.jpg" alt="2021 뉴이어, 스타벅스와 함께 하세요!" />
+            <a href="javascript:void(0)" class="btn">자세히 보기</a>
+          </div>
+
+          <div class="swiper-slide">
+            <img src="./images/promotion_slide2.jpg" alt="아메리카노 e-쿠폰을 드립니다." />
+            <a href="javascript:void(0)" class="btn">자세히 보기</a>
+          </div>
+
+          <div class="swiper-slide">
+            <img src="./images/promotion_slide3.jpg" alt="2021 뉴이어, 스타벅스와 함께 하세요!" />
+            <a href="javascript:void(0)" class="btn">자세히 보기</a>
+          </div>
+
+          <div class="swiper-slide">
+            <img src="./images/promotion_slide4.jpg" alt="2021 뉴이어, 스타벅스와 함께 하세요!" />
+            <a href="javascript:void(0)" class="btn">자세히 보기</a>
+          </div>
+
+          <div class="swiper-slide">
+            <img src="./images/promotion_slide5.jpg" alt="2021 뉴이어, 스타벅스와 함께 하세요!" />
+            <a href="javascript:void(0)" class="btn">자세히 보기</a>
+          </div>
+
+        </div> <!-- wrapper END -->
+      </div> <!-- container END -->
+
+      <!-- 페이지 버튼 -->
+      <div class="swiper-pagination"></div>
+      <div class="swiper-prev">
+        <div class="material-icons">arrow_back</div>
+      </div>
+      <div class="swiper-next">
+        <div class="material-icons">arrow_forward</div>
       </div>
 
-  </section>
+    </div> <!-- promotion END -->
+    
+  </section> <!-- notice END -->
 
 </body>
 

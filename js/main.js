@@ -19,6 +19,7 @@ searchInputEl.addEventListener('blur', function () {
   searchInputEl.setAttribute('placeholder', '')
 })
 
+// 우측 메뉴바 
 const badgeEl = document.querySelector('header .badges');
 
 // _.throttle(함수, 실행간격 시간)
@@ -49,3 +50,29 @@ fadeEls.forEach(function (fadeEl, index) {
   });
 });
 
+// 공지사항 세로 오토 슬라이드
+// new Swiper(선택자, 옵션)
+new Swiper('.notice-line .swiper-container', {
+  direction: 'vertical',
+  autoplay: true,
+  loop: true
+});
+
+// 슬라이드 이펙트
+new Swiper('.promotion .swiper-container', {
+  slidesPerView: 3, // 한번에 보여줄 슬라이드 수
+  spaceBetween: 10, // 슬라이드 사이 여백
+  centeredSlides: true, // 1번 슬라이드 중앙 시작
+  loop: true,
+  autoplay: {
+    delay: 5000
+  },
+  pagination: {
+    el: '.promotion .swiper-pagination' , // 페이지 번호 요소
+    clickable: true // 페이지 번호 요소 제어
+  },
+  navigation: {
+    prevEl: '.promotion .swiper-prev',
+    nextEl: '.promotion .swiper-next'
+  }
+});
